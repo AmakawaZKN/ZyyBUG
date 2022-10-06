@@ -4849,7 +4849,7 @@ contextInfo:{"externalAdReply": {"title": `じくあん`,"body": `Selamat ${sala
 previewType: "PHOTO",
 showAdAttribution: true,
 sourceUrl: `https://youtube.com/c/HwModsWa857`,
-thumbnailUrl: 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg\', 
+thumbnailUrl: 'https://telegra.ph/file/2490427433fe8575508c0.jpg', 
 thumbnail: kalimage,
 }
 }}, { quoted:hw})
