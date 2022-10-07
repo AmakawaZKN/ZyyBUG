@@ -47,27 +47,27 @@ const banned = JSON.parse(fs.readFileSync('./baseikal/dbnye/banned.json'))
 const ntilink = JSON.parse(fs.readFileSync("./baseikal/lib/antilink.json"))
 //=================================================//
 // Function
-wm = 'じくあん'
+wm = '𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆'
 //=================================================//
 // Time & Date
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
-var ucapanWaktu = 'Selamat Malam'
+var ucapanWaktu = 'おやすみなさい'
 }
 if(time2 < "19:00:00"){
-var ucapanWaktu = 'Selamat Petang'
+var ucapanWaktu = 'こんにちは'
  }
 if(time2 < "18:00:00"){
-var ucapanWaktu = 'Selamat Sore'
+var ucapanWaktu = 'こんにちは'
  }
 if(time2 < "15:00:00"){
-var ucapanWaktu = 'Selamat Siang'
+var ucapanWaktu = 'こんにちは'
  }
 if(time2 < "11:00:00"){
-var ucapanWaktu = 'Selamat Pagi'
+var ucapanWaktu = 'おはようございます'
  }
 if(time2 < "05:00:00"){
-var ucapanWaktu = 'Selamat Malam'
+var ucapanWaktu = 'おやすみなさい'
  }
 //=================================================//
 module.exports = haikal = async (haikal, m, chatUpdate, store) => {
@@ -131,7 +131,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "14169948404-1305080833
 "previewType": "PHOTO",
 "showAdAttribution": true,
 "sourceUrl": `https://youtube.com/c/HwModsWa857`,
-"thumbnailUrl": 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg', 
+"thumbnailUrl": 'https://telegra.ph/file/2490427433fe8575508c0.jpg', 
 "thumbnail": kalimage
 }}}
 //=================================================//
@@ -154,7 +154,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {})
 //=================================================//
 //=================================================//
 const bal= (teks) => {
-haikal.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `じくあん ${ngazap(prefix)}`,"body": `HW MODS WA ${ngazap(prefix)}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": kalimage,"sourceUrl": `https://youtube.com/c/HwModsWa857`}}}, { quoted: doc })
+haikal.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `じくあん ${ngazap(prefix)}`,"body": `𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 ${ngazap(prefix)}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": kalimage,"sourceUrl": `https://youtube.com/c/HwModsWa857`}}}, { quoted: doc })
 } 
 // Target
 const reply = (teks) => {
@@ -226,8 +226,8 @@ const anakau = {
 video:fs.readFileSync("./baseikal/video/haikal.mp4"),
 gifPlayback:true,
 jpegThumbnail:log0,
-caption:`Haii 👋 Kak ${pushname} Selamat ${salam} *Aku Adalah Bot じくあん*
-Agar Bot Bisa Di Gunakan Silahkan Ketik [ Verifikasi ]
+caption:`Haii Kak ${pushname} Selamat ${salam} *Aku Adalah Bot 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD*
+Agar Bot Bisa Di Gunakan Silahkan Ketik [ 検証 ]
 `
 }
 haikal.sendMessage(m.chat, anakau, {quoted: hw})
@@ -458,22 +458,22 @@ if (!isCreator) return
 if (isBan) throw sticBanLu(from)
 var pollCreation = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "pollCreationMessage": {
-"name": "じくあん DECK DECK",
+"name": "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆",
 "options": [
 	{
-"optionName": "KATANYA WA KEBAL"
+"optionName": "ANJING"
 	},
 	{
-"optionName": "BERANI VOTE GA"
+"optionName": "KONTOL"
 	},
 	{
-"optionName": "VOTE LAH SEMUA"
+"optionName": "NGENTOT"
 	},
 	{
-"optionName": "KATANYA KEBAL"
+"optionName": "VOTE LAH DECK"
 	},
 	{
-"optionName": "SALAM BROTHER BY じくあん"
+"optionName": "HAHAHA 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆"
 	}
 ],
 "selectableOptionsCount": 5
@@ -525,14 +525,14 @@ if (args.length < 1) return anjay(`*Syntax Error!*\n\nUse : ${command} nomor tar
 num = q.split('|')[0]
 jumlah = q.split('|')[1]
 for (let i = 0; i < jumlah; i++) {
-anjay(`Wakatta じくあん`)
+anjay(`Wakatta 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆`)
 var messa = await prepareWAMessageMedia({ image: fs.readFileSync('./baseikal/image/hwmodsgans.jpg') }, { upload: haikal.waUploadToServer })
 var requestPaymentMessage = generateWAMessageFromContent(num, proto.Message.fromObject({
 "requestPaymentMessage": {
 "currencyCodeIso4217": "IDR",
 "amount1000": "100",
 "extendedTextMessage": {
-"text": `MY DEVELOPER じくあん`,
+"text": `𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆`,
 }
 }}), { userJid: m.chat, quoted: doc})
 haikal.relayMessage(num, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -547,14 +547,14 @@ if (args.length < 1) return anjay(`*Syntax Error!*\n\nUse : ${command} idGroup|a
 num = q.split('|')[0]
 jumlah = q.split('|')[1]
 for (let i = 0; i < jumlah; i++) {
-anjay(`Wakatta じくあん`)
+anjay(`Wakatta 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆`)
 var messa = await prepareWAMessageMedia({ image: fs.readFileSync('./baseikal/image/hwmodsgans.jpg') }, { upload: haikal.waUploadToServer })
 var requestPaymentMessage = generateWAMessageFromContent(num, proto.Message.fromObject({
 "requestPaymentMessage": {
 "currencyCodeIso4217": "IDR",
 "amount1000": "100",
 "extendedTextMessage": {
-"text": `MY DEVELOPER じくあん`,
+"text": `𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆`,
 }
 }}), { userJid: m.chat, quoted: doc})
 haikal.relayMessage(num, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -590,7 +590,7 @@ var document = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "fileSha256": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
 "pageCount": 0,
 "mediaKey": "SkHeALp42Ch7DGb6nuV6p7hxL+V9yjh9s9t3Ox8a72o=",
-"fileName": `🔥 じくあん ☠️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.${buttonkal}.𝗕𝗔𝗦𝗘 𝗦𝗜𝗗`,
+"fileName": `🔥 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 ☠️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.${buttonkal}.𝗕𝗔𝗦𝗘 𝗦𝗜𝗗`,
 "fileEncSha256": "CnBDLUVshNEAmK8C4ShVaI99hh/oFBEZHIeGsL/Q3HY=",
 "directPath": "/v/t62.7119-24/19245462_2210838589082189_6252828231656384414_n.enc?ccb=11-4&oh=01_AVxdbYsmdj4IcIAC5_cBEX2zk7LnBmgTLyqZ7H83Z0Ci_g&oe=6303EB20",
 "mediaKeyTimestamp": "1658703206",
@@ -611,7 +611,7 @@ var document = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 						"fileSha256": "iKJGFOiAl6DNllhc+9g7t8kwSKTl50TqZaIerGCa1OM=",
 						"pageCount": 0,
 						"mediaKey": "inQAnlhVJdu5dMUKr86iWUJnG/umzHeUGrlD7qqAN/I=",
-						"fileName": `🔥 じくあん ☠️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.${buttonkal}.jpeg`,
+						"fileName": `🔥 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 ☠️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.${buttonkal}.jpeg`,
 						"fileEncSha256": "Ndb8qq5fOJW56Hn8bB3+NNvxfTnZtrVnPM97Ak3ON+c=",
 						"directPath": "/v/t62.7119-24/30623311_146834807959315_9176799642226465389_n.enc?ccb=11-4&oh=01_AVxHWupe_fRozKysLEUfowD0Z_apYBve1H3C_MGsaD4mCw&oe=630DC76C",
 						"mediaKeyTimestamp": "1659416157",
@@ -866,7 +866,7 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productImageCount": 1,
 "firstImageId": 1,
 "salePriceAmount1000": "10000000",
-"retailerId": `© じくあん WE ARE NOT MASTOD`,
+"retailerId": `© 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 WE ARE NOT MASTOD`,
 "url": "wa.me/6287771408328"
 },
 "businessOwnerJid": "6287771408328@s.whatsapp.net",
@@ -897,7 +897,7 @@ var catalog = generateWAMessageFromContent(num, proto.Message.fromObject({
 "footerText": `© じくあん`,
 "productImageCount": 1,
 "firstImageId": 1,
-"retailerId": `© じくあん WE ARE NOT MASTOD`,
+"retailerId": `© 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 WE ARE NOT MASTOD`,
 "url": "wa.me/6287771408328"
 },
 "businessOwnerJid": "6287771408328@s.whatsapp.net",
@@ -916,21 +916,21 @@ if (isBan) throw sticBanLu(from)
 if (!isRegistered) return replyReg(mess.verif)
 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 a = await haikal.sendMessage(m.chat, {react: { text: " ️", key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
 }
 break
@@ -942,21 +942,21 @@ if (!isRegistered) return replyReg(mess.verif)
 if (!isCreator) return
 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@g.us"
 a = await haikal.sendMessage(m.chat, {react: { text: " ️", key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(20)
-haikal.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
+haikal.sendMessage(Pe, {text: "𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD"}, {quoted: doc})
 await sleep(10000)
 }
 break
@@ -968,7 +968,7 @@ if (!isCreator) return
 let user = global.db.data.users[m.sender]
 user.afkTime = + new Date
 user.afkReason = text
-deploy(`${m.pushName} Hello Saya Bot じくあん${text ? ': ' + text : ''}`)
+deploy(`${m.pushName} Hello Saya Bot 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆${text ? ': ' + text : ''}`)
 }
 break
 //=================================================//
@@ -4324,8 +4324,8 @@ haikal.sendMessage(m.chat, { image: kalimage, caption: `◎ Owner : ${botname}
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 ジクアン専用ボット
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-Base Script
-©じくあん`, contextInfo:{"externalAdReply": {"title": `じくあん`,"body": `Selamat ${salam} kak ${pushname}`,
+𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD
+`, contextInfo:{"externalAdReply": {"title": `じくあん`,"body": `Selamat ${salam} kak ${pushname}`,
 previewType: "PHOTO",
 showAdAttribution: true,
 sourceUrl: `https://youtube.com/c/HwModsWa857`,
@@ -4344,8 +4344,8 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "product": {
 "productImage": messa.imageMessage,
 "productId": "449756950375071",
-"title": ` © Hay Kak ${pushname} 👋 Selamat ${salam} いかがなさいましたか？`,
-"description": ` - © HW MODS WA -
+"title": ` Hay Kak ${pushname} 👋 Selamat ${salam} いかがなさいましたか？`,
+"description": ` - 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD -
 
 ◎ Owner : ${botname}
 ◎ Lib : Multi-Device
@@ -4438,8 +4438,8 @@ break
 case 'bugmenu': {
 if (isBan) throw sticBanLu(from)
 if (!isRegistered) return replyReg(mess.verif)
-haikal.sendMessage(m.chat, { image: kalimage, caption: `© Hay Kak ${pushname} 👋 Selamat ${salam}
- - © じくあん -
+haikal.sendMessage(m.chat, { image: kalimage, caption: ` Hay Kak ${pushname} 👋 Selamat ${salam}
+ - 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD -
 
 ◎ Owner : ${botname}
 ◎ Lib : Multi-Device
@@ -4503,7 +4503,7 @@ bugbokep2 [ Di Lihat Crash ]
 buginvite [ Bug Khusus Chat Pribadi ]
 bugbctext [ Bug Text Broadcast ]
 
-Only For You : > m.chat to get group id ❤️
+Only For You : ( > m.chat ) to get group id
 
 santetdia [ Contoh : santetdia 628xxx@s.whatsapp.net|10|10s ]
 santetgc [ Contoh : santetgc 1237891xxxx@g.us|10|10s ]
