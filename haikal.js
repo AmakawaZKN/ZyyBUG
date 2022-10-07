@@ -2160,7 +2160,7 @@ break
 case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
 if (isBan) throw sticBanLu(from)
 if (!isRegistered) return replyReg(mess.verif)
-haikal.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c2fda8b471c869a46b8c5.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6285714170944 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://trakteer.id/hw-mods-wa-haikal\n⭔ Saweria : https://saweria.co/hwmodswa` }, { quoted: hw })
+haikal.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/2490427433fe8575508c0.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 99999k Per Group via E-Walet 1 Month\n⭔ 999999k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 999999k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6287771408328 (Owner)\n\nDonate For Me : \n⭔ 𝗟𝘆𝗰𝗼𝗿𝗶𝘀 𝗭𝘆𝘆 XD` }, { quoted: hw })
 }
 break
 //=================================================//
